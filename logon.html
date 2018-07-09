@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ATHENTICATION</title>
+        <link rel="stylesheet" type="text/css" href="logon.css">
+            
+    </head>
+    <body>
+        <h1>HAPPY BIRTHDAY!!</h1>
+        <p>Hi Ashley, I am someone. Well u already know who I am. I made this website for u. It Holdes my present for u. By the fact that you already r here i guess u already got my 2 presents. Can u guess wat I got you?</p>
+        <button onclick = "guess()" >press to guess----XD THAT RYMES XD</button>   
+        <p id = "demo"></p>
+        <span id="b"></span>
+        
+        
+        
+        <script type="text/javascript">
+            function login() {
+                
+                var food = prompt("Please Enter the password:");
+                if (food == null || food == "password") {
+                    alert("Ur ALL SET!");
+                } 
+                else {
+                    window.close()
+                }
+                
+            }
+            
+            
+            function guess() {
+                var c = prompt("XD amazing right? I looked up how to do this. Soooo, just enter ur guess")
+                var txt;
+                if (c == " "){
+                    txt = "fine be that way but you wont know how to get to ur present XD press the button again -.-";
+                }
+                else {
+                    txt = "So u think that I got you " + c + ". Lets see if ur correct." 
+                }
+                document.getElementById("demo").innerHTML = txt;
+                
+                
+            }
+            
+            login()
+            
+        </script>
+
+    </body>
+</html>
