@@ -1,50 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ATHENTICATION</title>
-        <link rel="stylesheet" type="text/css" href="logon.css">
-            
+        <title>WARNING</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="hi.css">
     </head>
     <body>
-        <h1>HAPPY BIRTHDAY!!</h1>
-        <p>Hi Ashley, I am someone. Well u already know who I am. I made this website for u. It Holdes my present for u. By the fact that you already r here i guess u already got my 2 presents. Can u guess wat I got you?</p>
-        <button onclick = "guess()" >press to guess----XD THAT RYMES XD</button>   
-        <p id = "demo"></p>
-        <span id="b"></span>
+        <h1 id="thing"><i class="fas fa-birthday-cake"></i>HAPPY BIRTHDAY!!<i class="fas fa-birthday-cake"></i></h1>
+        <div>
+            <button onclick = "guess()" id="button">press to guess----XD THAT RYMES XD</button> 
+            <p  id="text">Hi Ashley, I am someone. Well u already know who I am. I made this website for u. It Holds msy present for u. By the fact that you already r here i guess u already got my 2 presents. Can u guess wat I got you?</p>
+        </div>
+        <a href="food.html"><button id="sb">Click only if u have the password!</button></a>
         
         
-        
-        <script type="text/javascript">
-            function login() {
-                
-                var food = prompt("Please Enter the password:");
-                if (food == null || food == "password") {
-                    alert("Ur ALL SET!");
-                } 
-                else {
-                    window.close()
-                }
-                
-            }
-            
-            
-            function guess() {
-                var c = prompt("XD amazing right? I looked up how to do this. Soooo, just enter ur guess")
-                var txt;
-                if (c == " "){
-                    txt = "fine be that way but you wont know how to get to ur present XD press the button again -.-";
-                }
-                else {
-                    txt = "So u think that I got you " + c + ". Lets see if ur correct." 
-                }
-                document.getElementById("demo").innerHTML = txt;
-                
-                
-            }
-            
-            login()
-            
-        </script>
+        <script src="hi.js"></script>
 
     </body>
 </html>
