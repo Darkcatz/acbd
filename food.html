@@ -7,16 +7,20 @@
     
     <script type="text/javascript" >
         function logon() {
-                
-                var food = prompt("Please Enter the password:");
-                if (food == null || food == "intel-core-ben-wong") {
-                    alert("Ur ALL SET!");
-                } 
-                else {
-                    alert("XD u have to start over! Serves u right")
-                    window.close()
-                }
-                
+    
+            var food = window.prompt("Please Enter the password:");
+            if (food == null || food == "") {
+                alert("XD u have to start all over! serves you right!");
+                window.close()
+            } 
+            else if(food == "intel-core-ben-wong"){
+                alert("Ur ALL SET!");
+            }
+            else {
+                alert("XD u have to start all over! serves you right!");
+                window.close()
+            }
+            
         }
         logon()    
     </script>

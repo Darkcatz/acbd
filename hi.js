@@ -1,20 +1,22 @@
 function login() {
     
-    var food = prompt("Please Enter the password:");
-    if (food == null || food == "password") {
-        alert("Ur ALL SET!");
+    var food = window.prompt("Please Enter the password:");
+    if (food == null || food == "") {
+        window.close()
     } 
+    else if(food == "password"){
+        alert("Ur ALL SET!");
+    }
     else {
         window.close()
     }
     
 }
 
-
 function guess() {
-    var c = prompt("XD amazing right? I looked up how to do this. Soooo, just enter ur guess")
+    var c = window.prompt("XD amazing right? I looked up how to do this. Soooo, just enter ur guess")
     var txt;
-    if (c == " "){
+    if (c == null || c == ""){
         txt = "fine be that way but you wont know how to get to ur present XD press the button again -.-";
     }
     else {
@@ -25,6 +27,7 @@ function guess() {
     
 }
 
-
-
 login()
+
+
+
